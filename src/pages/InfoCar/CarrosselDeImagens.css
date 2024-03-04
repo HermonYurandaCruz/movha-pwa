@@ -1,0 +1,37 @@
+/* CarrosselDeImagens.css */
+.carrossel-container {
+    position: relative; /* Define a posição relativa */
+  }
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    font-size: 0px; /* Tamanho da fonte dos indicadores */
+    width: 6px; /* Reduz a largura das bolinhas */
+    height: 6px; /* Reduz a altura das bolinhas */
+    background-color: rgba(141, 169, 196, 0.3); /* Fundo dos indicadores */
+    border-radius: 50%; /* Formato dos indicadores */
+    cursor: pointer;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #134074; /* Cor de fundo do indicador ativo */
+  }
+  
+  .slick-dots {
+    position: absolute; /* Define a posição absoluta */
+    bottom: 10px; /* Define a distância da parte inferior */
+    left: 0; /* Alinha as bolinhas à esquerda */
+    right: 0; /* Alinha as bolinhas à direita */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    list-style: none; /* Remove a lista de pontos */
+    text-align: center; /* Alinha os itens ao centro */
+    z-index: 1; /* Garante que as bolinhas estejam acima do carrossel */
+  }
+  .slick-slide img {
+    width: 100%; /* Define a largura da imagem como 100% do contêiner */
+    height: auto; /* Define a altura da imagem automaticamente para manter a proporção */
+    border-radius: 8px;
+}

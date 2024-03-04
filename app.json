@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "paginas-africanas",
-    "slug": "paginas-africanas",
+    "name": "Movha",
+    "slug": "Movha",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,40 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSDocumentPickerUsageDescription": "..."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#ffffff",
+        "permissions": [
+          "READ_EXTERNAL_STORAGE"
+        ]
+      },
+      "package": "com.hermondacruz73.movha_moz"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "be2eb86d-3dfd-4c38-b5f9-93521f9cdf49"
+      }
     }
   }
 }
